@@ -5,6 +5,10 @@ class TodoModel {
     let request = axios.get("https://super-crud.herokuapp.com/api/todos")
     return request
   }
+  static create(todo) {
+  let request = axios.post("https://super-crud.herokuapp.com/api/todos", todo)
+  return request
+}
 }
 
 export default TodoModel
